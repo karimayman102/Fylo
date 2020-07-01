@@ -251,7 +251,7 @@ header nav ul li a{
 /*start curve*/
 .curve{
     width:100%;
-    margin:200px auto -10px;
+    margin:80px auto -10px;
 }
 .curve img{
     width:100%;
@@ -272,7 +272,7 @@ header nav ul li a{
 /*start productive*/
 .productive{
     background-color:#F8F8FE;
-    padding:50px 0 140px 0;
+    padding:50px 0 100px 0;
 }
 .productive .wrapper{
     width:90%;
@@ -385,7 +385,7 @@ header nav ul li a{
         flex-direction:column-reverse;
     }
     .right-article{
-        padding-bottom:150px;
+        padding-bottom:70px;
     }
     .left-article div:first-child h2{
         font-size:20px;
@@ -495,7 +495,7 @@ form input[type="email"]{
 form input[type="submit"]{
     outline:0;
     border:0;
-    width:200px;
+    width:60%;
     cursor:pointer;
     padding:15px;
     background-color:#fff;
@@ -553,7 +553,10 @@ footer{
 footer article{
     display:flex;
     justify-content:space-between;
-    padding:20px 150px 20px 0;
+
+}
+footer figure {
+    margin-bottom:30px;
 }
 footer article li{
     list-style-type:none;
