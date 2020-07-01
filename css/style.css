@@ -2,6 +2,10 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -ms-box-sizing:border-box;
 }
 body{
     font-family:poppins, arial;
@@ -17,8 +21,20 @@ body{
 header{
     min-height:100px;
     padding:50px 0;
+    margin:auto;
 }
-header .container{
+.logo{
+
+}
+.logo img{
+    width:100%;
+}
+nav{
+    margin-left:20px;
+}
+header .container-1{
+    width:90%;
+    margin:auto;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -27,52 +43,42 @@ header nav ul{
     display:flex;
     list-style-type:none;
     align-items:center;
+    justify-content:space-around;
 }
 header nav ul li{
     display:block;
-    padding:5px 15px;
-    margin:0 10px;
+    padding: 5px 5px;
+    margin: 0 10px;
 }
 header nav ul li a{
     text-decoration:none;
     color:#555;
+    font-size:12px;
 }
 /*start media query*/
 @media(max-width:500px){
     header{
         padding:30px 0;
         margin-bottom:30px;
-        width:150%;
     }
-    .logo img{
-        width:90px;
+    nav{
+
+    }
+    .logo{
     }
     header nav ul li a{
-        font-size:14px;
     }
-    header nav ul li{
-        padding:5px 5px;
-        margin:0 5px;
-    }
+
     
     
 }
-@media(min-width:501px) and (max-width:767px){
-    .logo img{
-        width:120px;
-    }
-    header nav ul li{
-        padding:5px 5px;
-        margin:0 10px;
-    }
-    header nav ul li a{
-        font-size:16px;
+@media(min-width:380px){
+    header .container-1 nav ul li a{
+        font-size:14px;
     }
 }
 @media(min-width:768px){
-    .logo img{
-        width:150px;
-    }
+
     header nav ul li{
         padding:5px 5px;
         margin:0 10px;
@@ -148,7 +154,6 @@ header nav ul li a{
         font-size:30px;
     }
     .intro{
-        width:150%;
     }
 }
 @media(min-width:550px) and (max-width:767px){
@@ -190,7 +195,6 @@ header nav ul li a{
         width:100%;
     }
     .left div:last-child input[type="email"]{
-        w
         border:1px solid #000;
         font-size:16px;
         border-radius:5px;
@@ -255,7 +259,7 @@ header nav ul li a{
 /*start media query*/
 @media(max-width:500px){
     .curve{
-        width:150%;
+
     }
 }
 @media(min-width:501px) and (max-width:767px){
@@ -326,7 +330,7 @@ header nav ul li a{
     display:flex;
     flex-direction:column;
     margin-top:20px;
-    width:410px;
+    width:100%;
 }
 .comment > img{
     width: 20px;
@@ -374,7 +378,6 @@ header nav ul li a{
 /*start media query*/
 @media(max-width:500px){
     .productive{
-        width:150%;
     }
 }
 @media(max-width:767px){
@@ -481,7 +484,7 @@ form .container{
 form input[type="email"]{
     outline:0;
     border:0;
-    width:400px;
+    width:100%;
     padding:15px 0 15px 10px;
     background-color:#fff;
     border-radius:3px;
@@ -506,7 +509,6 @@ form input[type="submit"]{
 /*start media query*/
 @media(max-width:500px){
     .sign-up{
-        width:150%;
     }
 }
 @media(max-width:767px){
@@ -582,7 +584,6 @@ footer article li a{
 /*start media query*/
 @media(max-width:500px){
     footer{
-        width:150%;
     }
 }
 @media(max-width:767px){
