@@ -5,6 +5,7 @@
 }
 body{
     font-family:poppins, arial;
+    overflow-x:hidden;
 }
 /*start global*/
 .container{
@@ -37,7 +38,26 @@ header nav ul li a{
     color:#555;
 }
 /*start media query*/
-@media(max-width:767px){
+@media(max-width:500px){
+    header{
+        padding:30px 0;
+        margin-bottom:30px;
+        width:150%;
+    }
+    .logo img{
+        width:90px;
+    }
+    header nav ul li a{
+        font-size:14px;
+    }
+    header nav ul li{
+        padding:5px 5px;
+        margin:0 5px;
+    }
+    
+    
+}
+@media(min-width:501px) and (max-width:767px){
     .logo img{
         width:120px;
     }
@@ -64,6 +84,9 @@ header nav ul li a{
 /*end media query*/
 /*end header*/
 /*start intro*/
+.intro{
+    margin:auto;
+}
 .intro .container{
     display:flex;
 }
@@ -73,7 +96,7 @@ header nav ul li a{
     display:flex;
     flex-direction:column;
 }
-.left div:first-child h1, {
+.left div:first-child h1 {
     color:hsl(243, 87%, 12%);
     font-size:40px;
 }
@@ -120,6 +143,14 @@ header nav ul li a{
     width:100%;
 }
 /*start media query*/
+@media(max-width:500px){
+    .left div:first-child h1 {
+        font-size:30px;
+    }
+    .intro{
+        width:150%;
+    }
+}
 @media(min-width:550px) and (max-width:767px){
     .left div:last-child input[type="email"]{
         width:80%;
@@ -136,7 +167,12 @@ header nav ul li a{
         width:100%;
     }
 }
-@media(max-width:767px){
+@media (min-width:501px) and (max-width:767px){
+        .left div:first-child h1{
+            font-size:30px;
+        }
+}
+@media (max-width:767px){
     .intro .container{
         flex-direction:column-reverse;
     }
@@ -144,9 +180,7 @@ header nav ul li a{
         align-items:center;
         text-align:center;
     }
-    .left div:first-child h1{
-        font-size:30px;
-    }
+
     .left div:first-child p{
         margin-top:25px;
     }
@@ -213,13 +247,18 @@ header nav ul li a{
 /*start curve*/
 .curve{
     width:100%;
-    margin:200px 0 -10px;
+    margin:200px auto -10px;
 }
 .curve img{
     width:100%;
 }
 /*start media query*/
-@media(max-width:767px){
+@media(max-width:500px){
+    .curve{
+        width:150%;
+    }
+}
+@media(min-width:501px) and (max-width:767px){
     .curve{
         margin-top:100px;
     }
@@ -333,6 +372,11 @@ header nav ul li a{
     width:80%;
 }
 /*start media query*/
+@media(max-width:500px){
+    .productive{
+        width:150%;
+    }
+}
 @media(max-width:767px){
     .wrapper{
         flex-direction:column-reverse;
@@ -460,6 +504,11 @@ form input[type="submit"]{
     box-shadow: 1px 1px 3px #000;
 }
 /*start media query*/
+@media(max-width:500px){
+    .sign-up{
+        width:150%;
+    }
+}
 @media(max-width:767px){
     .sign-up > .container{
         flex-direction:column;
@@ -531,6 +580,11 @@ footer article li a{
     color: #ccc
 }
 /*start media query*/
+@media(max-width:500px){
+    footer{
+        width:150%;
+    }
+}
 @media(max-width:767px){
     footer{
         padding-left:30px;
