@@ -60,17 +60,7 @@ header nav ul li a{
     header{
         padding:30px 0;
         margin-bottom:30px;
-    }
-    nav{
-
-    }
-    .logo{
-    }
-    header nav ul li a{
-    }
-
-    
-    
+    }    
 }
 @media(min-width:380px){
     header .container-1 nav ul li a{
@@ -119,6 +109,10 @@ header nav ul li a{
     width:340px;
     padding:15px 0 15px 15px;
     border-radius:2px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    -o-border-radius:2px;
+    -ms-border-radius:2px;
     outline:0;
     border:1px solid #ddd;
     font-family:poppins, "sans-serif";
@@ -133,6 +127,14 @@ header nav ul li a{
     font-family:poppins;
     margin-left:10px;
     border-radius:2px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    -o-border-radius:2px;
+    -ms-border-radius:2px;
+    -webkit-box-shadow:2px 2px 6px hsl(0, 0%, 75%);
+    -moz-box-shadow:2px 2px 6px hsl(0, 0%, 75%);
+    -o-box-shadow:2px 2px 6px hsl(0, 0%, 75%);
+    -ms-box-shadow:2px 2px 6px hsl(0, 0%, 75%);
     box-shadow:2px 2px 6px hsl(0, 0%, 75%);
     cursor:pointer;
 }
@@ -198,6 +200,10 @@ header nav ul li a{
         border:1px solid #000;
         font-size:16px;
         border-radius:5px;
+        -webkit-border-radius:5px;
+        -moz-border-radius:5px;
+        -o-border-radius:5px;
+        -ms-border-radius:5px;
     }
     .left div:last-child input[type="submit"]{
         
@@ -205,6 +211,10 @@ header nav ul li a{
         font-family:poppins;
         margin-left:10px;
         border-radius:5px;
+        -webkit-border-radius:5px;
+        -moz-border-radius:5px;
+        -ms-border-radius:5px;
+        -o-border-radius:5px;
         margin-top:20px;
     }
 }
@@ -257,11 +267,6 @@ header nav ul li a{
     width:100%;
 }
 /*start media query*/
-@media(max-width:500px){
-    .curve{
-
-    }
-}
 @media(min-width:501px) and (max-width:767px){
     .curve{
         margin-top:100px;
@@ -323,10 +328,18 @@ header nav ul li a{
     position:absolute;
     top:50%;
     transform:translatey(-50%);
+    -webkit-transform:translatey(-50%);
+    -moz-transform:translatey(-50%);
+    -o-transform:translatey(-50%);
+    -ms-transform:translatey(-50%);
 }
 .left-article .comment{
     background-color:#fff;
     box-shadow: 0 0 5px #000;
+    -webkit-box-shadow: 0 0 5px #000;
+    -moz-box-shadow: 0 0 5px #000;
+    -ms-box-shadow: 0 0 5px #000;
+    -o-box-shadow: 0 0 5px #000;
     display:flex;
     flex-direction:column;
     margin-top:20px;
@@ -460,14 +473,14 @@ header nav ul li a{
     color:#fff;
     font-weight:400;
     font-size:30px;
-    opacity:.9;
+    filter:opacity(90%);
     margin-bottom:20px;
 }
 .get-access p{
     color:#fff;
     font-size:16px;
-    opacity:.8;
     font-weight:400;
+    filter:opacity(80%);
 }
 form{
     flex:1;
@@ -488,8 +501,16 @@ form input[type="email"]{
     padding:15px 0 15px 10px;
     background-color:#fff;
     border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -o-border-radius:3px;
+    -ms-border-radius:3px;
     margin-bottom:10px;
     box-shadow:1px 1px 4px #000;
+    -webkit-box-shadow:1px 1px 4px #000;
+    -moz-box-shadow:1px 1px 4px #000;
+    -o-box-shadow:1px 1px 4px #000;
+    -ms-box-shadow:1px 1px 4px #000;
     font-family:poppins, "sans-serif";
 }
 form input[type="submit"]{
@@ -500,17 +521,21 @@ form input[type="submit"]{
     padding:15px;
     background-color:#fff;
     border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
     background-color:hsl(224, 93%, 58%);
     color:#fff;
     font-family:poppins;
     text-align:center;
     box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -ms-box-shadow: 1px 1px 3px #000;
+    -o-box-shadow: 1px 1px 3px #000;
 }
 /*start media query*/
-@media(max-width:500px){
-    .sign-up{
-    }
-}
 @media(max-width:767px){
     .sign-up > .container{
         flex-direction:column;
@@ -561,7 +586,7 @@ footer figure {
 footer article li{
     list-style-type:none;
     font-size:15px;
-    opacity:.9;
+    filter:opacity(90%);
     font-weight:400;
     display:flex;
     align-items:center;
@@ -585,10 +610,6 @@ footer article li a{
     color: #ccc
 }
 /*start media query*/
-@media(max-width:500px){
-    footer{
-    }
-}
 @media(max-width:767px){
     footer{
         padding-left:30px;
